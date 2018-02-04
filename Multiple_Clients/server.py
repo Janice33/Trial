@@ -52,7 +52,7 @@ class MultiServer(object):
         try:
             self.socket = socket.socket()
         except socket.error as msg:
-            print("Socket creation error: " + str(msg))
+            print("There is a Socket creation error: " + str(msg))
             # TODO: Added exit
             sys.exit(1)
         self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
